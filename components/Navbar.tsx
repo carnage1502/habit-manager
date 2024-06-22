@@ -1,5 +1,6 @@
 import React from "react";
 import AppIcon from "./AppIcon";
+import Link from "next/link";
 
 const Navbar = () => {
   const defColor = "#387ADF";
@@ -28,20 +29,22 @@ const Navbar = () => {
             </div>
           </div>
           {/* signin buttons */}
-          <div className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
-            <button
+          <nav className="mt-4 flex flex-col gap-4 sm:mt-0 sm:flex-row sm:items-center">
+            <Link
+              href={"/login"}
               style={bgColorObj}
-              className={`block sm:w-32 w-full rounded-lg px-9 py-3 text-sm font-medium text-white transition focus:outline-none`}
+              className={`block sm:w-32 w-full rounded-lg px-9 py-3 text-sm font-medium text-white transition focus:outline-none text-center`}
               type="button"
             >
               Sign In
-            </button>
-            <button
-              className={`block sm:w-32 w-full border rounded-lg px-9 py-3 text-sm font-medium transition focus:outline-none hover:bg-blue-600 hover:text-white border-blue-600 text-blue-600`}
+            </Link>
+            <Link
+              href={"/register"}
+              className={`block sm:w-32 w-full border rounded-lg px-9 py-3 text-sm font-medium transition focus:outline-none hover:bg-blue-600 hover:text-white border-blue-600 text-blue-600 text-center`}
             >
               Sign Up
-            </button>
-          </div>
+            </Link>
+          </nav>
         </div>
       </div>
     </header>

@@ -11,6 +11,13 @@ const HeroSection = () => {
         Start your day right with Daily Dash, your personal habit tracker
         designed to turn routines into remarkable achievements.
       </p>
+
+      <button
+        className={`block text-sm font-light rounded-lg px-9 py-3 text-white transition bg-blue-600 focus:outline-none`}
+        type="button"
+      >
+        Let&apos;s get started!
+      </button>
     </div>
   );
 };
