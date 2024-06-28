@@ -7,7 +7,7 @@ type Props = {};
 
 const Sidebar = (props: Props) => {
   return (
-    <div className="border-r-2 h-screen p-10">
+    <div className="flex-grow p-10 flex flex-col border bg-white min-h-screen">
       <LogoName />
       <Menu />
       <Logout />
